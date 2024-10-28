@@ -1,8 +1,10 @@
 .app{
+  
   min-height: 100vh;
+  min-width: 100vw;
   display: grid;
   background-image: url("./assets/noaa-JG_HfydoNqY-unsplash.jpg") ;
-  background-size: cover; /* Makes the image cover the entire element */
+  background-size: cover; 
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;
 }

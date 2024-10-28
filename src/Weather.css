@@ -1,12 +1,12 @@
 .weather{
     place-self: center;
-    padding: 30px;
+    padding: 20px 30px;
     border-radius: 10px;
     /* background-image: linear-gradient(45deg,#2f4680,#500ae4); */
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(128, 128, 128, 0.4));
     display: flex;flex-direction: column;
     align-items: center;
- 
+ /* width: 60%; */
 }
 .search{
 display: flex;
@@ -31,11 +31,11 @@ gap: 12px;
     cursor: pointer;
 }
 .weather-icon{
-    width: 120px;
-    margin: 20px 0;
+    width: 100px;
+    margin: 10px 0;
 }
 .temperature{
-    font-size: 60px;
+    font-size: 35px;
     line-height: 1;
     color: #fff;
 }
@@ -46,22 +46,88 @@ gap: 12px;
 }
 .weather-data{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
 }
 .weather-data .col{
     display: flex;
 align-items: flex-start;
-gap: 12px;
-font-size: 16px;
+gap: 8px;
+font-size: 13px;
 }
 .col span{
     display: block;
-    font-size: 16px;
+    font-size: 14px;
 }
 .col img{
-    width: 24px;
+    width: 20px;
     margin-top: 10px;
+}
+.forecast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    gap: 30px;
+    
+}
+.forecast-day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+}
+.forecast-day img{
+    width: 60px;
+}
+.forecast-day p{
+    margin-bottom: 0;
+    text-align: center;
+}
+.forecast-heading{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px;
+    text-transform: uppercase;
+}
+@media (max-width: 600px){
+    .weather{
+        box-sizing: border-box;
+        background: none;
+        /* height: 100vh; */
+        width: 100vw;
+        border-radius: 0;
+    }   
+
+    .forecast{
+       flex-wrap: wrap;
+       
+    }
+    .location{
+        font-size: 25px;
+    
+    }
+    .weather-icon{
+        width: 80px;
+        margin: 8px 0;
+    }
+    .forecast-day{
+        padding: 10px 5px;
+        width: 40%;
+        border-radius: 10px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(128, 128, 128, 0.4));
+}
+
+    .forecast-heading{
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 30px 10px;
+        text-transform: uppercase;
+    }
 }
